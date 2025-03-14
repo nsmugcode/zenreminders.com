@@ -56,3 +56,22 @@
 .body-info {
 	margin-top: 50px;
 }
+a {
+	text-decoration: underline;
+	color: darkgrey;
+}
+/* Tablet down */
+@media only screen and (max-width: 768px) {
+	.zen-content {
+		padding: 10px;
+		padding-top: 25px;
+	}
+	#reminder-site-title {
+		text-align-last: left;
+		padding-left: 10px;
+		padding-top: 25px;
+	}
+	#reminder-text {
+		font-size: 1.5em;
+	}
+}

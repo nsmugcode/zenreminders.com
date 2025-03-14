@@ -6,8 +6,13 @@ fetch('./reminders.json')
 function loadReminder(remindersArray){
 	// Load random reminder
 	let reminder = remindersArray[getRandomInt(remindersArray.length)]
+	let reminderURL = reminder["Source URL"]
 	document.getElementById('reminder-text').innerHTML = reminder["Content"]
-	document.getElementById('reminder-source').innerHTML = ""+reminder["Source Author"]+"<br>"+reminder["Source Title"]
+	var sourceLinkTitle = reminder["Source Title"]
+	if (reminderURL.length > 0){
+		sourceLinkTitle = "<a href='"+reminderURL+"'>"+reminder["Source Title"]+"</a>"
+	}
+	document.getElementById('reminder-source').innerHTML = ""+reminder["Source Author"]+"<br>"+sourceLinkTitle
 }
 function getRandomInt(max){
 	return Math.floor(Math.random() * max)
