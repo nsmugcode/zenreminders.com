@@ -1,0 +1,58 @@
+.hide {
+	display: none;
+}
+.website-hero {
+	padding: 20px;
+}
+.website-title {
+	font-size: 50px;
+	text-align: left;
+}
+.website-subtitle {
+	font-size: 15px;
+	text-align: right;
+	color: darkgrey;
+	margin-bottom: 0px;
+}
+.center {
+	text-align: center;
+}
+/* Footer */
+.main-footer {
+/*	border-top: 1px solid lightgray;*/
+/*	min-height: 50px;*/
+	margin-top: 90px;
+	padding: 20px;
+}
+.footer-title {
+	font-size: 20px;
+}
+/* App CSS */
+.main-content {
+	margin: 20px;
+	border-radius: 20px;
+	background-color: #F8F8F8;
+}
+.zen-content {
+	padding: 100px;
+	padding-top: 50px;
+}
+#reminder-text {
+	color: #595959;
+	padding: 20px;
+}
+#reminder-source {
+	color: darkgrey;
+	font-style: italic;
+	text-align: right;
+}
+#reminder-site-title {
+	color: #7d7a7a;
+	font-size: 1.35em;
+	text-align-last: left;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+.body-info {
+	margin-top: 50px;
+}
