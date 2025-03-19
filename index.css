@@ -60,6 +60,17 @@ a {
 	text-decoration: underline;
 	color: darkgrey;
 }
+.secondary-content {
+	text-align: right;
+}
+.reload-button {
+	text-decoration: none;
+	padding-right: 20px;
+	color: darkgrey;
+}
+.reload-button:hover {
+	text-decoration: underline;
+}
 /* Tablet down */
 @media only screen and (max-width: 768px) {
 	.zen-content {

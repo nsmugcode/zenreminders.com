@@ -1,8 +1,10 @@
-fetch('./reminders.json')
-.then(response => response.json())
-.then(data => loadReminder(data))
-.catch(error => console.log(error))
-
+reloadReminders();
+function reloadReminders() {
+	fetch('./reminders.json')
+	.then(response => response.json())
+	.then(data => loadReminder(data))
+	.catch(error => console.log(error))
+}
 function loadReminder(remindersArray){
 	// Load random reminder
 	let reminder = remindersArray[getRandomInt(remindersArray.length)]
