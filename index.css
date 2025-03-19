@@ -27,7 +27,13 @@
 .footer-title {
 	font-size: 20px;
 }
+.footer-subtitle {
+	font-size: 0.75em;
+}
 /* App CSS */
+p {
+	color: darkgrey;
+}
 .main-content {
 	margin: 20px;
 	border-radius: 20px;
@@ -71,6 +77,14 @@ a {
 .reload-button:hover {
 	text-decoration: underline;
 }
+.about-title {
+	font-weight: 600;
+	font-size: 1.25em;
+	font-style: italic;
+}
+.about-content-text {
+	padding: 0 8em 0 8em;
+}
 /* Tablet down */
 @media only screen and (max-width: 768px) {
 	.zen-content {
@@ -84,5 +98,8 @@ a {
 	}
 	#reminder-text {
 		font-size: 1.5em;
+	}
+	.about-content-text {
+		padding: 0 2em 0 2em;
 	}
 }
