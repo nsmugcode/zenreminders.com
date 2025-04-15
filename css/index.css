@@ -66,8 +66,15 @@ a {
 	text-decoration: underline;
 	color: darkgrey;
 }
+.bare-link {
+	text-decoration: none;
+}
 .secondary-content {
 	text-align: right;
+}
+.link-actions {
+	text-align: center;
+	padding-top: 4em;
 }
 .reload-button {
 	text-decoration: none;
@@ -81,9 +88,10 @@ a {
 	font-weight: 600;
 	font-size: 1.25em;
 	font-style: italic;
+	margin-bottom: 0em;
 }
 .about-content-text {
-	padding: 0 8em 0 8em;
+
 }
 /* Tablet down */
 @media only screen and (max-width: 768px) {
@@ -100,6 +108,6 @@ a {
 		font-size: 1.5em;
 	}
 	.about-content-text {
-		padding: 0 2em 0 2em;
+
 	}
 }
