@@ -21,5 +21,6 @@ function renderAllReminders(remindersArray) {
 		reminderCardDOM += '<p id="reminder-source">'+reminder["Source Author"]+"<br>"+sourceLinkTitle+'</div>';
 		allRemindersDOM += reminderCardDOM;
 	}
+	document.getElementById('zen-listing-count').innerHTML = remindersArray.length
 	document.getElementById('zen-listing').innerHTML = allRemindersDOM
 }
