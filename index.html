@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/index.css">
 		<title>Zen Reminders</title>
 	</head>
-	<body>
+	<body id="main-content-body" class="">
 		<nav class="navbar border-bottom border-body hide" data-bs-theme="">
 			<div class="container-fluid">
 				<div class="">
@@ -35,7 +35,7 @@
 					</div>
 				</div>
 				<div class="secondary-content">
-					<a class="reload-button" onclick="reloadReminders()">New Reminder</a>
+					<a class="reload-button" onclick="reloadReminders()">New Reminder</a> | <a class="reload-button" id="lookMode" onclick="toggleEyeMode()">Easy Eye Mode</a>
 				</div>
 				<div class="link-actions">
 					<img class="img-fluid" src="tron_zen.png" />

@@ -1,9 +1,28 @@
 reloadReminders();
+
+// Check for previous mode, and toggle if it was dark
+let previousModeCookie = document.cookie
+if (previousModeCookie.includes("dark")) {
+	toggleEyeMode();
+}
+
 function reloadReminders() {
 	fetch('./reminders.json')
 	.then(response => response.json())
 	.then(data => loadReminder(data))
 	.catch(error => console.log(error))
+}
+function toggleEyeMode() {
+	var colorMode = "light"
+	let mainBody = document.getElementById('main-content-body');
+	if (mainBody.classList.contains('dark-mode')) {
+		document.getElementById('main-content-body').classList.remove("dark-mode");
+	}else {
+		colorMode = "dark";
+		document.getElementById('main-content-body').classList.add("dark-mode");
+	}
+	// Save current mode to a cookie
+	document.cookie = "color-mode = "+colorMode
 }
 function loadReminder(remindersArray){
 	let randomIndex = getRandomInt(remindersArray.length)

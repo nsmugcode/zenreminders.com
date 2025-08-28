@@ -78,7 +78,7 @@ a {
 }
 .reload-button {
 	text-decoration: none;
-	padding-right: 20px;
+	/* padding-right: 20px; */
 	color: darkgrey;
 }
 .reload-button:hover {
@@ -109,5 +109,52 @@ a {
 	}
 	.about-content-text {
 
+	}
+}
+/* Custom Color Modes */
+.dark-mode {
+	background-color: #151517 !important;
+
+	#reminder-site-title {
+		color: white;
+	}
+	#reminder-text {
+		color: white;
+	}
+	#reminder-source {
+		color: white;
+	}
+	.main-content {
+		background-color: #272733;
+	}
+	.card {
+		background-color: #272733;
+	}
+}
+.grid-mode {
+	background-color: #000000 !important;
+	a {
+		text-shadow: #28a1ff 1px 0 10px;
+	}
+	p {
+		text-shadow: #28a1ff 1px 0 10px;
+	}
+	#reminder-site-title {
+		color: #28a1ff;
+		text-shadow: #28a1ff 1px 0 10px;
+	}
+	#reminder-text {
+		color: #28a1ff;
+		text-shadow: #28a1ff 1px 0 10px;
+	}
+	#reminder-source {
+		color: #28a1ff;
+		text-shadow: #28a1ff 1px 0 10px;
+	}
+	.main-content {
+		background-color: #151517;
+	}
+	.card {
+		background-color: #151517;
 	}
 }
