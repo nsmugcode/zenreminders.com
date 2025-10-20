@@ -22,7 +22,8 @@ function toggleEyeMode() {
 		document.getElementById('main-content-body').classList.add("dark-mode");
 	}
 	// Save current mode to a cookie
-	document.cookie = "color-mode = "+colorMode
+	const daysToExpire = new Date(2147483647 * 1000).toUTCString();
+	document.cookie = "color-mode = "+colorMode+"; expires="+daysToExpire;
 }
 function loadReminder(remindersArray){
 	let randomIndex = getRandomInt(remindersArray.length)
