@@ -46,6 +46,7 @@ p {
 #reminder-text {
 	color: #595959;
 	padding: 20px;
+	line-height: 1.75em;
 }
 #reminder-source {
 	color: darkgrey;
